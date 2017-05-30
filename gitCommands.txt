@@ -1,0 +1,25 @@
+mkdir seba
+cd seba
+git clone https://github.com/oguloncel/task5map.git task5m
+cd task5m/
+ls
+history | grep "cp"
+cp -r /afs/atlass01.physik.uni-bonn.de/user/oncel/Desktop/cppex/Archived/task5map_orig/* .
+ls
+ls *.root
+mv *.root ../
+ls ..
+git add *
+git commit -m "Add all the stuff, but no root files."
+git push origin master
+git rm -rf LFV_analyzer/
+rm -rf LFV_analyzer/
+git commit "removed LFV folder"
+git commit -m "removed LFV folder" 
+git push origin master
+git log
+ls
+mv ../*.root .
+ls -ltr
+git status
+ ls
